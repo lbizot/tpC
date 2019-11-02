@@ -1,14 +1,14 @@
 # Makefile with dependencies management (Q4)
 
-CXX        = clong++
-CXXFLAGS   = -Wall -Wextra -std=c++Ox
+CXX        = g++
+CXXFLAGS   = -Wall -Wextra -std=c++11
 DEPFLAGS   = -MMD
 LDFLAGS    = 
 # Replace tp.cpp with the cpp files that need to be compiled
-SRCS       = chambre.cpp main_chambre.cpp
+SRCS       = main_hotel.cpp hotel.cpp chambre.cpp
 OBJS       = $(SRCS:.cpp=.o)
 # Replace tp_main with the name you want to give to your executable file
-TARGET     = exec_tp 
+TARGET     = res 
 DEPS	   = $(OBJS:.o=.d)
 
 all: $(TARGET)
