@@ -15,31 +15,31 @@ Client::Client(string ID , string nom , string prenom , int reservation){
 	m_reservation = reservation;
 }
 
-//permet de recuperer le champs nom
+
 string Client::getNom(){
 
 	return m_nom;
 }
 
-//permet de recuperer le champs prenom
+
+>>>>>>> 261b702f3fb7ee9be55941df1842fa3ea76c6f83
 string Client::getPrenom(){
 
 	return m_prenom;
 }
 
-//permet de recuperer le champs ID
+
 string Client::getID(){
 
 	return m_ID;
 }
 
-//permet de recuperer le champs reservation
+
 int Client::getReservation(){
 
 	return m_reservation;
 }
-
-//permet de modifier tous les champs d'un client
+<
 void Client::setClient( string ID, string nom , string prenom , int reservation){
 
 	m_ID=ID;
