@@ -19,6 +19,10 @@ Date::Date(int jour , int mois , int annee){
 
 }
 
+Date::Date(){
+
+
+}
 
 
 int Date::getJour(){
