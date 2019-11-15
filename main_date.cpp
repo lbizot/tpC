@@ -7,7 +7,11 @@ int main(){
 
 Date date1= Date(19,01,2019);
 
+
 cout<<"le jour est"<<date1.getJour()<<endl;
+
+cout<<"la date est"<<date1.getJour()<< " " <<date1.getMois()<< " " <<date1.getAnnee()<<endl;
+
 
 
 date1.setDate(12,12,2020);

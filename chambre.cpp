@@ -11,6 +11,10 @@ Chambre::Chambre(int id,string type,int prix){
 
 }
 
+Chambre::Chambre(){
+
+}
+
 int Chambre::getId(){
 
 	return m_id;

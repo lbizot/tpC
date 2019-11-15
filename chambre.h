@@ -7,6 +7,7 @@ class Chambre {
 public:
 
 	Chambre(int id, string type ,int prix);
+	Chambre();
 	
 	int getPrix();
 	string getType();
@@ -16,6 +17,7 @@ public:
 	void setType(string type);
 	void setId(int id);
 	void setChambre(int id,string type,int prix);
+	
 
 
 private:

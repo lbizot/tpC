@@ -5,17 +5,20 @@ class Date {
 
 	public :
 
-	Date(int jour , int mois , int annee);
+	
 
-	int getJour();
+	Date(int jour , int mois , int annee); //Init du constructeur
 
-	int getMois();
+	int getJour(); //Init getter jour, affiche le jour
 
-	int getAnnee();
+	int getMois(); // Init getter mois , affiche le mois 
 
-	void setDate(int jour , int mois , int annee);
+	int getAnnee(); // Init getter annee , affiche l'annee 
 
-	void setJour(int jour);
+	void setDate(int jour , int mois , int annee); // Init setter Date , permet de modifier les parametres de date
+
+	void setJour(int jour); 
+
 
 	void setMois(int mois);
 
