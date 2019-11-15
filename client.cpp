@@ -4,9 +4,9 @@ using namespace std;
 
 
 //constructeur de la classe client prenant en paramètre un id,un nom,un prenom et un nombre de reservation déjà effectués
-Client::Client(string ID , string nom , string prenom , int reservation){
+Client::Client(string id , string nom , string prenom , int reservation){
 
-	m_ID = ID;
+	m_id = id;
 
 	m_nom = nom;
 
@@ -35,11 +35,9 @@ string Client::getPrenom(){
 
 //Renvoi l'ID du client
 
-
-
 string Client::getID(){
 
-	return m_ID;
+	return m_id;
 }
 
 
@@ -54,9 +52,9 @@ int Client::getReservation(){
 
 //Permet de modifier les informations du client
 
-void Client::setClient( string ID, string nom , string prenom , int reservation){
+void Client::setClient( string id, string nom , string prenom , int reservation){
 
-	m_ID=ID;
+	m_id=id;
 
 	m_nom=nom;
 
@@ -72,7 +70,7 @@ void Client::setNom(string nom){
 
 void Client::setID(string id){
 
-	m_ID=id;
+	m_id=id;
 }
 
 void Client::setReservation(int reservation){
