@@ -7,13 +7,13 @@ using namespace std;
 
 int main(){
 
-Reservation reservation1= Reservation("HOTEL1","IDChambreC1","ReservationC1","Client1",330.50);
+Date date1 = Date(10,02,1999);
+Date date2=Date(11,02,1999);
+Reservation reservation1= Reservation("HOTEL1","IDChambreC1","ReservationC1","Client1",330.50,date1,date2);
+
+cout << "l'ID de la reservation est" << reservation1.getIdReservation()<<endl;
 
 
-
-reservation1.setRESERVATION("HOTELmod1","IDChambreC1mod","ReservationC1mod","Client1mod",montantTOT);
-
-cout<< "les informations de la reservation sont " << reservation1.getIDHOTEL() << " " << reservation1.getIDCHAMBRE() << " " << reservation1.getIDCLIENT()<<" "<<reservation1.getIDRESERVATION()<<" "<<reservation1.TOTAL(int nbreNUITS, double prixNUITS)<<endl;
-
+return 0;
 
 }

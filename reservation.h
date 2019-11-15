@@ -10,20 +10,32 @@ class Reservation {
 
 	Reservation();
 
-	Reservation(int idHotel , int idChambre , string idReservation , int idClient , 
+	Reservation(string idHotel , string idChambre , string idReservation , string idClient , 
 		double montantTOT, Date dateDebut, Date dateFin);
 
 	string getIdHotel();
 
-	int getIdChambre();
+	string getIdChambre();
 
 	string getIdReservation();
 
-	int getIdClient();
+	string getIdClient();
 
 	double totalAvecRemise(int nbreNUITS , double prixNUITS);
 
 	double totalSansRemise(int nbreNUITS, double prixNUITS);
+
+	void setDateDebut(Date date);
+
+	void setDateFin(Date date);
+
+	void setMontantTOT(double montantTOT);
+
+	double getMontantTOT();
+
+	Date getDateFin();
+
+	Date getDateDebut();
 
 	void setRESERVATION( string idHotel , string idChambre , string idReservation , string idClient , double montantTOT , Date dateDebut , Date dateFin);
 
@@ -39,11 +51,11 @@ class Reservation {
 
 		 string m_idHotel;
 
-		 int m_idChambre;
+		 string m_idChambre;
 
 		 string m_idReservation;
 
-		 int m_idClient; 
+		 string m_idClient; 
 
 		 double m_montantTOT;
 
